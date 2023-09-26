@@ -1,5 +1,5 @@
 import React from 'react'
-import { useSelector, useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import {removeTodo} from '../features/TodoSlice'
 
 function Todos() {
@@ -8,8 +8,8 @@ function Todos() {
 
   return (
     <>
-    <div>Todos</div>
-    <ul className="list-none">
+    <div className='mt-6 p-4 text-2xl font-mono'>{todos ? "Your Todos" : ""}</div>
+    <ul className="list-none shadow-2xl">
         {todos.map((todo) => (
           <li
             className="mt-4 flex justify-between items-center bg-zinc-800 px-4 py-2 rounded"
