@@ -8,7 +8,7 @@ function Todos() {
 
   return (
     <>
-    <div className='mt-6 p-4 text-2xl font-mono'>{todos ? "Your Todos" : ""}</div>
+    <div className='mt-6 p-4 text-2xl font-mono transition animate-pulse'>{todos ? "Your Todos" : ""}</div>
     <ul className="list-none shadow-2xl">
         {todos.map((todo) => (
           <li
